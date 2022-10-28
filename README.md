@@ -5,3 +5,5 @@ A: archivo añadido (git add . / git add "archivo.formato")
 M: modified, archivo modificado
 para subir se usa git push -u origin, antes siempre tenes que poner git add .
 para extraerse usa git pull
+AAAAA
+holahola
