@@ -1,54 +1,120 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css" />
+  <link rel="icono" href="icono.png" type="images/icono.png"/>
+  <link rel="stylesheet" href="styles.css" />
   <meta charset="utf-8">
   <title>Portfolio Candela Alvarez</title>
+  
 </head>
-<body text="pink" bgcolor="black">
+
   <header>
-  <h1 align="center">PORTFOLIO CANDELA ALVAREZ</h1>      
+  <h1 align="center" id="titulo" >PORTFOLIO CANDELA ALVAREZ</h1>      
 </header>
 
 <nav>
-  <a href="index3.html">Inicio</a>
+  <a href="index3.html" title="Actualizar">Inicio</a>
   <a href="#">Trabajos</a>
-  <a href="Contacto.html">Contacto</a>
+  <a href="Contacto.html" title="Contactame">Contacto</a>
+  <form>
+    <input type="search" name="q" placeholder="Buscar" />
+    <input type="submit" value="¡Vamos!"/>
+  </form>
 </nav>
 <img src="https://static.vecteezy.com/system/resources/previews/002/701/701/non_2x/light-purple-background-with-rectangles-colorful-illustration-with-gradient-rectangles-and-squares-pattern-for-websites-landing-pages-vector.jpg"width="1350" height="30">
 <Section>
+  <div>
+    <audio src="song/sunday-girl-720.mp4" autoplay loop controls></audio>
+   </div>
 
 <article>
  <h1>Sobre Mi</h1>
- <div class="profilepic">
-  <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/234682/user/icon/moove/f1?rev=372442" alt="Candela Alvarez">
-</div>
 
- <p>Hola, mi nombre es Candela Alvarez, soy de Quilmes y estudio para ser programadora. Poseo una gran capacidad 
+ <span class="profilepic">
+  <img src="images/otro.png" alt="Candela Alvarez" class="userpicture" width="300" height="330"  align="center">
+ </span>
+
+ <p class="descripcion">Hola, mi nombre es Candela Alvarez, soy de Quilmes y estudio para ser programadora. Poseo una gran capacidad 
   creativa y amo los desafios. Siempre estoy dispuesta a aprender y proponerme nuevas metas. Tengo una
   gran capacidad para trabajar en equipo y adaptarme a cualquier situación encontrando soluciones rapidas y funcionales.
   Me encanta diseñar, dibujar y todo aquello que requiera creatividad.
 
  </p>
+ 
+ <!--<p>Soy un comentario </p>-->
  <h3>Formación Academica</h3>
+ <br></br>
  <ul>
-    <li>Tecnicatura en Diseño De Indumentaria</li>
-   <li>Bachillerato en Ciencias Sociales</li>
+    <li id="b" >Tecnicatura en Diseño De Indumentaria</li>
+   <li id="c">Bachillerato en Ciencias Sociales</li>
  </ul>
 </article>
 </Section>
-<aside>
-  <h3>Conocimiento profesional en:</h3>
-  <li>Paquete Microsoft Office</li>
-  <li>Illustrator</li>
-  <li>Photoshop</li>
-  <li>InDesigne</li>
-  <li>Sistemas Audaces</li>
-  <li>Marvelous Designer</li>
-</aside>
+<br></br>
+<br></br>
+<h3>Conocimiento profesional en:</h3>
+<br></br>
+<ul >
+  <li id="a" >Paquete Microsoft Office</li>
+  <li class="destacado" >Illustrator</li>
+  <li >Photoshop</li>
+  <li >InDesigne</li>
+  <li >Sistemas Audaces</li>
+  <li >Marvelous Designer</li>
+</ul>
+<form>
+  <p>Nombre: <input type="text" name="nombre" size="40" placeholder="Ingrese su Nombre" required></p>
+  <p>Password: <input type="password" name="password" size="40"></p>
+  <p>Titulo: <input type="text" name="rol" size="40" placeholder="Este es tu rol" readonly ></p>
+  <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+  <p>Sexo: 
+    <input type="radio" name="hm" value="h">Hombre
+    <input type="radio" name="hm" value="m">Mujer
+  </p>
+  <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+  </p>
 
-<p> </p>
-<p> </p>
+</form>
+<select name="select">
+<option value="value1">value1</option>
+<option value="value2" selected>value2</option>
+<option value="value3">value3</option>
+
+</select>
+
+<label for="dino-select">Choose a dinosaur:</label>
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select>
+
+
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+
+
 <img src= "https://upload.wikimedia.org/wikipedia/commons/a/a5/L%C3%ADnea_divisoria_portada.png"alt="Logo HTML5" width="100%" height="50%">
-<footer> ©Todos los derechos reservados 2022</footer>
+<footer><p id="final"> ©Todos los derechos reservados 2022</p></footer>
 </body>
 </html>
