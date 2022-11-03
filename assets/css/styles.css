@@ -1,0 +1,35 @@
+*{
+  color:aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+body {
+  padding:2.em;
+  background-image: url(fondo\ 4.jpg) ;
+  background-size:cover;
+  background-position:right;
+}
+p.destacado {color: aqua;
+font-weight:bold;}
+#titulo{ color: rgb(174, 241, 250);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+}
+h3{color: rgb(152, 255, 255);
+  margin-left: 40px}
+h1 {color: rgb(152, 243, 245);}
+#final {color: blue;}
+#a {color: rgb(159, 247, 240);}
+#b {color: rgb(158, 252, 249);}
+#c {color: rgb(169, 241, 250);}
+div img {margin: top 0.5em;}
+p.descripcion{color: rgb(113, 251, 235);
+  height: 60px;
+  margin: top 0.5em 0.5em 0.5em 1em; 
+}
+img.userpicture {
+  margin: top 0.5em;
+  margin-right: 1rem;
+  border-radius: 80%;
+  vertical-align: middle ;
+  border-style: ridge;
+}
